@@ -1,0 +1,57 @@
+{
+    "name": "drupal/ghosted",
+    "type": "drupal-module",
+    "description": "Ghost markdown editor.",
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+                "name": "codemirror/CodeMirror",
+                "version":"3.15.0",
+                "source": {
+                    "url": "https://github.com/codemirror/CodeMirror",
+                    "type": "git",
+                    "reference":"3.15.0"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "enyo/dropzone",
+                "version":"v3.10.2",
+                "source": {
+                    "url": "https://github.com/enyo/dropzone",
+                    "type": "git",
+                    "reference": "v3.10.2"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "showdownjs/showdown",
+                "version":"v0.3.1",
+                "source": {
+                    "url": "https://github.com/showdownjs/showdown",
+                    "type": "git",
+                    "reference": "v0.3.1"
+                }
+            }
+        }
+    ],
+    "require": {
+        "codemirror/CodeMirror": "3.15.*",
+        "enyo/dropzone": "3.10.*",
+        "showdownjs/showdown": "0.3.*"
+    },
+    "license": "GPL-2.0+",
+    "homepage": "https://drupal.org/project/mail",
+    "authors": [
+        {
+            "name": "Stefan Auditor (sanduhrs)",
+            "homepage": "https://www.drupal.org/u/sanduhrs"
+        }
+    ],
+    "keywords": ["drupal", "wysiwyg", "editor", "markdown"]
+}

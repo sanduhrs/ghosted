@@ -1,0 +1,6 @@
+ghosted_demo:
+  path: 'ghosted-demo'
+  defaults:
+    _content: '\Drupal\ghosted\Controller\PageGhostedController::demo'
+  requirements:
+    _access: 'TRUE'

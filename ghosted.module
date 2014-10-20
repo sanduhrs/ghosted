@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * The Ghosted module
+ */
+
+/**
+ * implements hook_theme().
+ */
+function ghosted_theme($existing, $type, $theme, $path) {
+  return array(
+    'ghosted' => array(
+      'template' => 'ghosted',
+      'variables' => array(),
+    ),
+  );
+}
+
+/**
+ * Prepares variables for ghosted templates.
+ *
+ * Default template: ghosted.html.twig.
+ *
+ * @param array $variables
+ *   An array containing the following elements:
+ *   - editor: Editor name
+ */
+function template_preprocess_ghosted(&$variables) {
+  $variables['editor'] = 'ghosted';
+}
